@@ -12,10 +12,10 @@ const Hardbtn = document.getElementById("Hardbtn");
     let random = Math.floor(Math.random()*(maxNum - minNum + 1)) + minNum;
     while(Attempts < 10){
         
-    guess = window.prompt(`The Number is Between ${minNum} And ${maxNum}:`);
+    guess = window.prompt(`The number is between ${minNum} And ${maxNum}:`);
 
     if(guess === null){
-        window.alert("Game Canceled");
+        window.alert("Game canceled");
          break;
     }
         
@@ -26,7 +26,7 @@ const Hardbtn = document.getElementById("Hardbtn");
     }
         guess = Number(guess);
     if(isNaN(guess) || guess > maxNum || guess < minNum){
-        window.alert("invaild Number,please try again");
+        window.alert("invalid number,Please try again");
          continue;
     }
  
@@ -34,7 +34,7 @@ const Hardbtn = document.getElementById("Hardbtn");
         Attempts ++ ;
         if(random===guess){
         
-         window.alert(`${random} is Correct!, ${Attempts} Attempts 🥳`);
+         window.alert(`${random} is correct!, ${Attempts} attempts 🥳`);
                  
         break;                
         
@@ -45,11 +45,11 @@ const Hardbtn = document.getElementById("Hardbtn");
                 break; }
                 
         else if(random < guess){
-                window.alert(`Too High,Try Again`);
+                window.alert(`Too high,Try again`);
                
         }
         else if(random > guess){
-                window.alert(`Too Low,Try Again`);  
+                window.alert(`Too low,Try again`);  
                
         }    
         
@@ -60,13 +60,14 @@ const Hardbtn = document.getElementById("Hardbtn");
 
 
 Easybtn.onclick = function(){
-startgame(500);
+startgame(1000);
 };
 
 
 Hardbtn.onclick = function(){
-startgame(1000);
+startgame(2000);
 
 };
+
 
 
