@@ -1,56 +1,60 @@
-/* خلفية الصفحة */
+/* خلفية اللعبة */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
   height: 100vh;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-/* عنوان اللعبة */
-#mylabel {
-  font-size: 2rem;
-  font-weight: bold;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  margin-bottom: 30px;
 }
 
-/* الحاوية بتاعت الأزرار */
+/* العنوان */
+#mylabel {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  animation: glow 2s infinite alternate;
+}
+
+/* أنيميشن الإضاءة */
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #ff0080; }
+  to   { text-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff; }
+}
+
+/* منطقة الأزرار */
 #mybuttons {
   display: flex;
   gap: 20px;
 }
 
-/* شكل الأزرار */
+/* الأزرار */
 .buttons {
   padding: 15px 40px;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bold;
   border: none;
   border-radius: 12px;
-  background: #ffffff;
-  color: #333;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
-/* تأثير عند المرور */
+/* عند المرور على الزر */
 .buttons:hover {
-  transform: translateY(-3px) scale(1.05);
-  background: #6a11cb;
-  color: #fff;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background: linear-gradient(45deg, #24c6dc, #514a9d);
 }
 
-/* تأثير عند الضغط */
+/* عند الضغط */
 .buttons:active {
-  transform: translateY(2px) scale(0.98);
-  background: #2575fc;
-  color: #fff;
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
