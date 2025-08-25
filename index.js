@@ -45,11 +45,11 @@ const Hardbtn = document.getElementById("Hardbtn");
                 break; }
                 
         else if(random < guess){
-                window.alert(`Too High,Try Again,remain ${10-Attempts} ⚠️`);
+                window.alert(`Too High,Try Again`);
                
         }
         else if(random > guess){
-                window.alert(`Too Low,Try Again, remain ${10-Attempts} ⚠️`);  
+                window.alert(`Too Low,Try Again`);  
                
         }    
         
@@ -68,4 +68,5 @@ Hardbtn.onclick = function(){
 startgame(1000);
 
 };
+
 
