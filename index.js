@@ -12,7 +12,7 @@ const Hardbtn = document.getElementById("Hardbtn");
     let random = Math.floor(Math.random()*(maxNum - minNum + 1)) + minNum;
     while(Attempts < 10){
         
-    guess = window.prompt(`Guess a Number Between ${minNum} And ${maxNum} 😎`);
+    guess = window.prompt(`The Number is Between ${minNum} And ${maxNum} `);
 
     if(guess === null){
         window.alert("Game Canceled");
@@ -45,11 +45,11 @@ const Hardbtn = document.getElementById("Hardbtn");
                 break; }
                 
         else if(random < guess){
-                window.alert(`Too High, ${10-Attempts} Attempts remain ⚠️`);
+                window.alert(`Too High,Try Again ${10-Attempts} Attempts remain ⚠️`);
                
         }
         else if(random > guess){
-                window.alert(`Too Low, ${10-Attempts} Attempts remain ⚠️`);  
+                window.alert(`Too Low,Try Again ${10-Attempts} Attempts remain ⚠️`);  
                
         }    
         
@@ -66,4 +66,5 @@ startgame(500);
 
 Hardbtn.onclick = function(){
 startgame(1000);
+
 };
