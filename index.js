@@ -15,7 +15,7 @@ const Hardbtn = document.getElementById("Hardbtn");
     guess = window.prompt(`The number is between ${minNum} And ${maxNum}:`);
 
     if(guess === null){
-        window.alert("Game canceled");
+        
          break;
     }
         
@@ -68,6 +68,7 @@ Hardbtn.onclick = function(){
 startgame(2000);
 
 };
+
 
 
 
