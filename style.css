@@ -1,14 +1,15 @@
 body{
-    font-size: 10em;
+    font-size: 3em;
     text-align: center;
 }
 #mylabel{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center
 }
 
 .buttons{
     text-align: center;
-    font-size: 1.15em;
+    font-size: 0.5em;
     
+
 }
