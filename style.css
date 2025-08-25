@@ -1,0 +1,14 @@
+body{
+    font-size: 10em;
+    text-align: center;
+}
+#mylabel{
+    font-size: 1.5em;
+    text-align: center
+}
+
+.buttons{
+    text-align: center;
+    font-size: 1.15em;
+    
+}
